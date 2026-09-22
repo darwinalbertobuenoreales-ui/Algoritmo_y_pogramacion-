@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace crear_programa_con_menu
+
+    // crea un programa que muestre un menu con 3 opciones y ejecute 
+    // una acccion dependiendo de la opcion seleccionada.
+{
+    internal class Program
+    {
+        private static int opcion;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("menu");
+            Console.WriteLine("1.saludar");
+            Console.WriteLine("2.mostrar fecha");
+            Console.WriteLine("3.salir");
+            Console.WriteLine("4.mostrar hora");
+            Console.WriteLine("5.crear tarea ");
+            Console.WriteLine("selecciona una opcion");
+            int opcion = Convert.ToInt32(Console.ReadLine());
+
+
+            switch (opcion)
+            {
+                case 1:
+                    Console.WriteLine("!hola! bienvenido!!");
+                    break;
+                case 2:
+
+                    Console.WriteLine("la fecha actualn es:" + DateTime.Now);
+
+                        break;
+                case 3:
+                    Console.WriteLine("programa finalizado!!!");
+                    break;
+                default:
+                    Console.WriteLine("opcion no validad!!");
+                    break;
+                case 4:
+                    Console.WriteLine("mostrar hora");
+                    break;
+                case 5:
+                    Console.WriteLine("crar tarea");
+                    break;
+
+            }
+
+        }
+    }
+}
+
