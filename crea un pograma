@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace crea_un_pograma_db
+{
+    internal class Program
+    {
+        private static int contador;
+
+        static void Main(string[] args)
+            
+        {
+            int contador = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("ingrese el numero" + 1 + ": ");
+                int num = int.Parse(Console.ReadLine());
+
+                if (num > 0) contador++;
+
+                Console.WriteLine("cantidad de numero positivos es: " + contador); 
+                
+
+
+            }
+        }
+    }
+}
