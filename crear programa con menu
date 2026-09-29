@@ -1,56 +1,64 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace crear_programa_con_menu
-
-    // crea un programa que muestre un menu con 3 opciones y ejecute 
-    // una acccion dependiendo de la opcion seleccionada.
+namespace pogrma
 {
     internal class Program
-    {
-        private static int opcion;
 
+    {
         static void Main(string[] args)
         {
-            Console.WriteLine("menu");
-            Console.WriteLine("1.saludar");
-            Console.WriteLine("2.mostrar fecha");
+            Console.WriteLine("Menu");
+            Console.WriteLine("1. saludar");
+            Console.WriteLine("2.mostrar fecha ");
             Console.WriteLine("3.salir");
-            Console.WriteLine("4.mostrar hora");
-            Console.WriteLine("5.crear tarea ");
             Console.WriteLine("selecciona una opcion");
             int opcion = Convert.ToInt32(Console.ReadLine());
 
-
-            switch (opcion)
-            {
+            switch (opcion) {
                 case 1:
-                    Console.WriteLine("!hola! bienvenido!!");
+                    Console.WriteLine(" ingrese su nombre:");
+                    string name = Console.ReadLine();
+
+                
+                    Console.WriteLine("ingrese su edad");
+                    int age = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("ingrese su genero f/M ");
+                    string gender = Console.ReadLine();
+
+                    Console.WriteLine("ingrese su facultad");
+                    string faculty = Console.ReadLine();
+
+                    Console.WriteLine("ingrese su pograma academico");
+                    string program = Console.ReadLine();
                     break;
                 case 2:
-
-                    Console.WriteLine("la fecha actualn es:" + DateTime.Now);
-
-                        break;
+                    Console.WriteLine("la fecha actual es:  " + DateTime.Now);
+                    break;
+                    Console.WriteLine("saliendo del pograma");
                 case 3:
-                    Console.WriteLine("programa finalizado!!!");
                     break;
                 default:
-                    Console.WriteLine("opcion no validad!!");
-                    break;
-                case 4:
-                    Console.WriteLine("mostrar hora");
-                    break;
-                case 5:
-                    Console.WriteLine("crar tarea");
+
+                    Console.WriteLine("Error!! opcion no v alidad ");
                     break;
 
-            }
+
+
+
+
+
+
+
+
+
+        }
 
         }
     }
 }
-
